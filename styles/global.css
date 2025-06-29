@@ -30,6 +30,75 @@
   --fs-sm: 0.75rem;
   --fs-md: 0.875rem;
   --fs-base: 1rem;
-  --fs-xl: 2rem:
+  --fs-lg: 1.5rem;
+  --fs-xl: 2rem;
+  
+  --px-base: 1rem;
+  --px-xl: 2rem; 
+
+  --py-base: 1rem;
+  --py-xl: 2rem;
+}
+
+html {
+  font-family: var(--ff-poppins);
+  font-weight: var(--fw-base);
+  font-size: var(--fs-base);
+  color: var(--text-color-secondary);
+  line-height: 1.7;
+  letter-spacing: 0px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
+}
+header, section#about {
+  background-color: var(--surface-color);
+}
+
+h2 {
+  font-weight: var(--fw-bold);
+  line-height: 1.25;
+  color: var(--text-color-primary);
+}
+
+h2 {
+  font-size: var(--fs-lg);
+}
+
+p {
+  font-size: var(--fs-md);
+  line-height: 1.5;
 
 }
+
+a {
+  /* font-size: var(--fs-base); */
+  line-height: 1.5;
+
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+ul[role="list"] {
+  list-style: none;
+
+  font-size: var(--fs-md);
+}
+
+
+@media (width >=80em) {
+  :root {
+    --fs-lg: 2rem;
+
+
+    --px-base: 2rem;
+  }
+}
+

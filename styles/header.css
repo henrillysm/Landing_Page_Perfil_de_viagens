@@ -1,0 +1,10 @@
+header {
+  & img {
+  margin-right: auto;
+  }
+
+  & a:hover {
+    color: var(--brand-color);
+    text-decoration: underline;
+  }
+}
